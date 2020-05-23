@@ -79,3 +79,12 @@ class adminUser(models.Model):
     profileImg = models.CharField(max_length=100, default='photo.jpg')
     date_of_reg = models.DateTimeField(default=timezone.now)
     password = models.CharField(max_length=100)
+
+class category(models.Model):
+    Title=models.CharField(max_length=100, null=False)
+    Description=models.CharField(max_length=2048,null=False)
+
+class db_subcategory(models.Model):
+    Title = models.CharField(max_length=100, null=False)
+    Description = models.CharField(max_length=2048, null=False)
+    Category=models.CharField(max_length=100, null=False)

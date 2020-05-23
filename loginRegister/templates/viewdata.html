@@ -1,0 +1,83 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<title>view category</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ 		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+	/*
+	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
+	*/
+	@media
+	  only screen 
+    and (max-width: 760px), (min-device-width: 768px) 
+    and (max-device-width: 1024px)  {
+
+		/* Force table to not be like tables anymore */
+
+		/*
+		Label the data
+    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+		*/
+	
+}
+</style>
+<body>
+<table>
+<nav class="navbar navbar-expand-sm">
+  
+  <a class="navbar-brand" href="/admin/admin_successLogin">
+    <img src="{% static 'images/Caramel-Horz.png' %}" alt="logo" style="width:240px; height:65px; margin:0px 0px 0px 0px;">
+  </a>
+ </nav>
+<div align="center" style="max-width:500px;margin: auto;">
+    <h3>Program list</h3>
+    </div>
+    <br/>
+    <br/>
+
+<table border="1" style="overflow-x:auto;margin-left: 30px;">
+
+<tr>
+<th>Title</th>
+<th>Description</th>
+
+</tr>
+<tr>
+  {% for cate in alldata %}
+
+<td>{{ cate.Title }}</td>
+<td>
+{{ cate.Description }}</td>
+</tr>
+        {% endfor %}
+
+</table>
+<br>
+<br><center>
+<a href="/admin/viewsublist" style="color: black;font-weight: bold;font-size: 25px;" >View Sub-Program list</a>
+</center>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

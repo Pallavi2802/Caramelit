@@ -22,7 +22,7 @@
     
 
 </head>
-<body class="body-overflow">
+<body class="body-overflow"  style="font-family: 'Times New Roman', Times, serif;">
 	<div class="acaheader" id="topheader">
 		<div class="container-fluid text5">
 			<nav class="navbar navbar-expand-lg bg navbar-light">
@@ -40,20 +40,19 @@
 						<li class="nav-item ">
 							<a class="nav-link px-lg-4 alink" href="/">IT Services Home</a>
 						</li>
+						<li class="dropdown nav-item">
+							<a href="#" class="dropdown-toggle nav-link px-lg-4 alink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Registration <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+						<li class="nav-item"><a class="nav-link px-lg-4 " href="user/login">Student</a></li>
+						<li class="nav-item"><a class="nav-link px-lg-4 " href="instructor/instructor_login">Instructor</a></li>
+						<li class="nav-item"><a class="nav-link px-lg-4 " href="organisation/organisation_login">Corporates</a></li>
 						<li class="nav-item">
-							<a class="nav-link px-lg-4 alink" href="user/login">Student</a>
+							<a class="nav-link px-lg-4 " href="college/college_login">Universities</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link px-lg-4 alink" href="instructor/instructor_login">Instructor</a>
+							<a class="nav-link px-lg-4 " href="admin/admin_login">Admin</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link px-lg-4 alink" href="organisation/organisation_login">Corporates</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link px-lg-4 alink" href="college/college_login">Universities</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link px-lg-4 alink" href="admin/admin_login">Admin</a>
+							</ul>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link px-lg-4 alink" href="contact/academycontact">Contact Us</a>
@@ -76,28 +75,29 @@
 						</div>
 						</div>
 					</div>
-					
+
 					 <div class="col-md-6 col-lg-6 col-12 text-center1">
 						<!-- <div data-aos="fade-left"data-aos-duration="2000"> -->
  							<img src="{% static 'staticHome/images/show4.png' %}" width="100%" height="60%" >
 						</div>
-						
+
 <!-- 					</div>
  -->				</div>
 			</section>
-		</div>	
+		</div>
 
 <!-------------------FEATURE START-------------------------->
 
 	<section class="feature-section" id="feature">
-	<div class="row py-5">
+		<div class="row py-5">
 	<div class="col-lg-4 col-md-6 col-10">
 	<img src="{% static 'staticHome/images/show5.png' %}" class="img-fluid" id="whywe">
 	</div>
 	<div class="col-lg-6 col-md-6 col-12">
 	<h2 class="font-weight-bold tophead2" style="color: rgba(0,191,255 ,1)">WHY WE ARE</h2>
+		</div>
 	</div>
-	</div>
+
 	<div class="container-fluid">
 		<div class="row banner3">
 
@@ -109,11 +109,12 @@
 
 <!-- </div> -->
 			</div>
-			<div class="feature1 col-lg-6 col-md-6 col-12">
+
+		<div class="feature1 col-lg-6 col-md-6 col-12">
 				<!-- <div data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="1500"> -->
-<h1 class="padd" > WE ARE HERE TO GUIDE </h1> 
+<h1 class="padd" > WE ARE HERE TO GUIDE </h1>
 				<p class="padd"> The programing language enables us to write client programs and develop
 					online solutions such as - mobile applications, web applications, and games, etc. Programming is used to
 				automate, maintain, assemble, measure and interpret the processing of the data and information.</p>
@@ -122,7 +123,7 @@
 				<a href="{% static 'broouchure.pdf' %}" download class="banner2 ml-lg-5">DOWNLOAD</a>
 				</div>
 <!-- </div> -->
-				
+
 			</div>
 		</div>
 
@@ -130,212 +131,22 @@
 </section>
 <!-------------------FEATURE END-------------------------->
 <!-------------------JOINING START-------------------------->
-<section class="joining-section" id="joining" style="display: none;">
-	<div class="row py-5">
-	<div class="col-lg-4 col-md-6 col-10" id="img-fluid" >
-		<!-- <div data-aos="fade-right"data-aos-duration="1500"data-aos-offset="300"> -->
+<!------------------JOINING END-------------------------->
+<!-------------------WORKING START----------------------->
 
-	<img src="{% static 'staticHome/images/show11.png' %}" style="width: 100%;height: 100% !important;">
-		<!-- </div> -->
-	</div>
-	<div class="col-lg-6 col-md-6 col-12">
-		<!-- <div data-aos="fade-left"data-aos-duration="1500"data-aos-offset="300"> -->
-	<h2 class="font-weight-bold tophead" style="color: darkblue;">WHO CAN JOIN</h2>
-	<!-- </div> -->
-</div>
-	</div>
-	<div class="container-fluid pb-5 joining-responsive">
-		<div class="row ">
-				<!-- 	<div class="owl-carousel owl-theme" id="carousel-2"> -->
-				<div class="col-lg-4">	
-				<!-- <div data-aos="zoom-in"data-aos-duration="1500"data-aos-offset="300"> -->
-				<div class="card-join">
-					
-					<h4 class="font-weight-bold py-2">New Skill</h4>
-					<img src="{% static 'staticHome/images/krr2.jpg' %}" class="imgpad" alt="noskills" style="width: 100%;padding: 30px;">
-					<h5 class="font-weight-bold py-3" id="fresh">Freshers</h5>
-					<a href="#work"><p><button>Know More</button></p></a>
-				</div>
-				<!-- </div> -->
-			</div>
-			<div class="col-lg-4" >
-				<!-- <div data-aos="zoom-in"data-aos-duration="3000"data-aos-offset="300"> -->
-				<div class="card-join">
-					<h4 class="font-weight-bold py-2">Re Skill</h4>
-					<img src="{% static 'staticHome/images/krr1.jpg' %}" class="imgpad" alt="reskills" style="width: 100%;padding: 30px;">
-					<h5 class="font-weight-bold py-3">BPO/KPO to Technology</h5>
-					<a href="#work"><p><button>Know More</button></p></a>
-				</div>
-			<!-- </div> -->
-			</div>
-			<div class="col-lg-4">
-				<!-- <div data-aos="zoom-in-left" data-aos-duration="3000"data-aos-offset="300">
- -->				<div class="card-join">
-					<h4 class="font-weight-bold py-2">Up Skill</h4>
-					<img src="{% static 'staticHome/images/krr3.jpg' %}" class="imgpad" alt="upskills" style="width: 100%;padding: 30px;">
-					<h5 class="font-weight-bold py-3">Technology Transformation</h5>
-					<a href="#work"><p><button>Know More</button></p></a>
-					</div>
-				<!-- </div> -->
-			</div>
-	
-</div>
-</div>
-	<!-- mobile version -->
-	<div class="joining-carousel"
-  data-flickity='{ "wrapAround": true }'>
-  <div class="carousel-cell-join">
-        <div class="card-join ">
-          
-          <h4 class="font-weight-bold py-2">New Skill</h4>
-          <img src="{% static 'staticHome/images/krr2.jpg' %}" class="imgpad" alt="noskills" style="width: 100%;padding: 30px;">
-          <h5 class="font-weight-bold py-3" id="fresh">Freshers</h5>
-          <a href="#work"><p><button>Know More</button></p></a>
-        </div>
-  </div>
-  <div class="carousel-cell-join">
-    <div class="card-join ">
-          <h4 class="font-weight-bold py-2">Re Skill</h4>
-          <img src="{% static 'staticHome/images/krr1.jpg' %}" class="imgpad" alt="reskills" style="width: 100%;padding: 30px;">
-          <h5 class="font-weight-bold py-3">BPO/KPO to Technology</h5>
-          <a href="#work"><p><button>Know More</button></p></a>
-        </div>
-  </div>
-  <div class="carousel-cell-join">
-    <div class="card-join ">
-          <h4 class="font-weight-bold py-2">Up Skill</h4>
-          <img src="{% static 'staticHome/images/krr3.jpg' %}" class="imgpad" alt="upskills" style="width: 100%;padding: 30px;">
-          <h5 class="font-weight-bold py-3">Technology Transformation</h5>
-		  <a href="#work"><p><button>Know More</button></p></a>
-          </div>
-  </div>
-</div>
-</div>
-</section>
+<!--------------<div class="row py-5" id="learnmore">
+	<div class=" col-lg-4 col-md-6 col-12 ">
+		 <img src="images/show18.png" class="img-fluid imgwidth"> -->
 
-	<!-- mobile version closes -->
-
-<!-------------------JOINING END-------------------------->
-<!-------------------WORKING START-------------------------->
-<div class="row py-5" id="learnmore">
-	<div class="col-lg-4 col-md-6 col-12">
-		<!-- <img src="{% static 'staticHome/images/show18.png' %}" class="img-fluid imgwidth"> -->
-		<img src="{% static 'staticHome/images/show11.png' %}" style="width: 100%;height: 100% !important;">
-	
-</div>
-	<div class="col-lg-8 col-md-6 col-12">
-	
-	<h2 class="font-weight-bold tophead1" style="color: rgba(124,77,255 ,1)">WHO CAN JOIN</h2>
-	</div>
-	</div>
-
-<div class="container-fluid" id="work">
-
-  
-	<!-- Nav tabs -->
-	<ul class="nav nav-justified nav-tabs nav-edit" role="tablist">
-	  <li class="nav-item navitem-marg">
-		<a class="nav-link active " id="tabnav" data-toggle="tab" href="#home">New Skill</a>
-	  </li>&emsp;
-	  <li class="nav-item navitem-marg">
-		<a class="nav-link" id="tabnav" data-toggle="tab" href="#menu1">Re Skill</a>
-	  </li>&emsp;
-	  <li class="nav-item navitem-marg">
-		<a class="nav-link " id="tabnav" data-toggle="tab" href="#menu2">UP Skill</a>
-	  </li>
-	</ul>
-  
-	<!-- Tab panes -->
-	<div class="tab-content">
-	  <div id="home" class="container-fluid tab-pane active"><br>
-	   <div class="row">
-		 <div class="col-lg-4 col-md-12 col-12">
-		   <img src="{% static 'staticHome/images/crr1.jpg' %}" class="nav-img"> 
-		 </div>
-		 <div class="col-lg-8 col-md-11 col-sm-12 skill-dev">
-		   <h3>Transforming a student to an IT Professional Transformation</h3>
-		   <div class="skill-img">
-		   <ul>
-			 <li>Academics,skill analysis</li>
-			 <li>Evaluate skills performance</li>
-			 <li>Counselling for best course</li>
-			 <li>Training recommendations </li>
-			 <li>Course enrollment</li>
-		   </ul>
-		  
-            <img src="{% static 'staticHome/images/stack.png' %}">
-		   </div>
-		 </div>
-	   </div>
-	  </div>
-  
-  
-  
-	  <div id="menu1" class="container-fluid tab-pane fade"><br>
-		
-		<div class="row">
-			<div class="col-lg-4 col-md-12 col-12">
-			  <img src="{% static 'staticHome/images/crr2.jpg' %}" class="nav-img"> 
-			</div>
-			<div class="col-lg-8 col-md-11 col-sm-12 skill-dev">
-			  <h3>Learning new skills to be a better IT Professional</h3>
-			  <div class="skill-img">
-			  <ul>
-				<li>Existing skillset analysis</li>
-				<li>Evaluate skills performance</li>
-				<li>counselling for best course</li>
-				<li>Training recommendations</li>
-				<li>Course enrollment</li>
-			  </ul>
-			 
-			   <img src="{% static 'staticHome/images/NewSkill.jpg' %}">
-			  </div>
-			</div>
-		  </div>
-
-	  </div>
-  
-  
-  
-	  <div id="menu2" class="container-fluid tab-pane fade"><br>
-		
-		<div class="row">
-			<div class="col-lg-4 col-md-12 col-12">
-			  <img src="{% static 'staticHome/images/crr3.jpg' %}" class="nav-img"> 
-			</div>
-			<div class="col-lg-8 col-md-11 col-sm-12 skill-dev">
-			  <h3>Upgrade to new skills to be a best IT Professional</h3>
-			  <div class="skill-img">
-			  <ul>
-				<li>Skillset gap analysis</li>
-				<li>Evaluate skills performance</li>
-				<li>Counselling for best course</li>
-				<li>Training recommendations</li>
-				<li>Course enrollment</li>
-			  </ul>
-			 
-			   <img src="{% static 'staticHome/images/upSkill.jpg' %}">
-			  </div>
-			</div>
-		  </div>
-
-	  </div>
-  
-  
-  
-	</div>
-  </div>
-
-
-
-
+<!--------WORKING END-------------------------->
 <section class="working-section" id="working">
 	<div class="row py-5">
-	<div class="col-lg-8 col-md-6 col-12">
-		
-	<h2 class="font-weight-bold tophead1 text-right" style="color: rgba(124,77,255 ,1)">HOW IT WORKS</h2>
-	
-</div>
+		<div class="col-lg-8 col-md-6 col-12">
+
+			<h2 class="font-weight-bold tophead1 text-right" style="color: rgba(0,191,255 ,1)">	<button class="collapse-btn-2" id="margin-left" data-toggle="collapse" data-target="#colaapse" ><img src="{% static 'staticHome/images/dropdown.png' %}" alt="" srcset="" width="20" height="10"></button> <p class="m-left">SHOW MORE</p> HOW WE WORK</h2>
+
+		</div>
+
 	<div class="col-lg-4 col-md-6 col-12">
 	<img src="{% static 'staticHome/images/show18.png' %}" class="img-fluid imgwidth">
 	</div>
@@ -345,13 +156,12 @@
 		<!-- <div class="col-md-1">
 
 		</div> -->
-		<div class="col-md-12">
-			<img class="desktop-view"  src="{% static 'staticHome/images/w23.jpg' %}" style="width: 100%;height: 500px;">	
-		</div>
-		<div class="col-md-12">
-			<img class="mobile-view" src="{% static 'staticHome/images/workflow7.jpg' %}" style="width: 100%;height: 500px;">
-			<h6 class="mobile-view" style="font-weight: bold;margin-top: 15px;text-align: center;">Caramel IT Acadamy-Training Delivery Methodology</h6>	
-		</div>
+		<div id="colaapse" >
+			<div><a href="recpage.html"><img src="{% static 'staticHome/images/w23.png' %}"></a></div>
+
+
+
+	</div>
 		<!-- <div class="col-md-1">
 
 		</div> -->
@@ -382,7 +192,7 @@
 				<div >
 					     <!-- input tag -->
 	<!-- <input id="searchbar" onkeyup="search_course()" type="text"
-		
+
 
         name="search" placeholder="Search courses..">  -->
 				</div>

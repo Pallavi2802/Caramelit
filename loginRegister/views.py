@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import studentUser, adminUser, instructor, college, organisation
+from .models import studentUser, adminUser, instructor, college, organisation,category as db_category,db_subcategory
 import hashlib
 from django.http import HttpResponse
 
@@ -102,7 +102,7 @@ def user_successLogin(request):
     return render(request, 'successLogin.html', {'data': data})
 
 def logout(request):
-    response = redirect('/user/login')
+    response = redirect('academy')
     response.set_cookie('username', None)
     response.set_cookie('type', None)
     return response
@@ -203,7 +203,7 @@ def instructor_successLogin(request):
     return render(request, 'instructor_successLogin.html', {'data': data})
 
 def instructor_logout(request):
-    response = redirect('/instructor/instructor_login')
+    response = redirect('academy')
     response.set_cookie('username', None)
     response.set_cookie('type', None)
     return response
@@ -296,7 +296,7 @@ def college_successLogin(request):
     return render(request, 'college_successLogin.html', {'data' : data})
 
 def college_logout(request):
-    response = redirect('/college/college_login')
+    response = redirect('academy')
     response.set_cookie('username', None)
     response.set_cookie('type', None)
     return response
@@ -378,7 +378,7 @@ def organisation_successLogin(request):
     return render(request, 'organisation_successLogin.html', {'data' : data})
 
 def organisation_logout(request):
-    response = redirect('/organisation/organisation_login')
+    response = redirect('academy')
     response.set_cookie('username', None)
     response.set_cookie('type', None)
     return response
@@ -439,7 +439,7 @@ def admin_successLogin(request):
     return render(request, 'admin_successLogin.html', {'name': admin.name})
 
 def admin_logout(request):
-    response = redirect('/admin/admin_login')
+    response = redirect('/academy')
     response.set_cookie('username', None)
     response.set_cookie('type', None)
     return response
@@ -459,3 +459,61 @@ def college_list(request):
 def organisation_list(request):
     organisation_data = organisation.objects.all()
     return render(request, 'organisation_list.html', {'organisations': organisation_data})
+
+def report_page(request):
+    return render(request,"report.html");
+
+def Que_bank(request):
+    return render(request,"question.html");
+
+def manage(request):
+    return render(request,"manage.html");
+
+def report_page1(request):
+    return render(request,"report1.html");
+
+def structure(request):
+    return render(request,"structure.html");
+
+def structure1(request):
+    sub = db_category.objects.all()
+    con = {'sub': sub}
+    return render(request,"structure1.html",con);
+
+
+def category(request):
+    if request.method == "POST":
+        Title = request.POST["Title"]
+        Description = request.POST["Description"]
+        ins= db_category()
+        ins.Title=Title
+        ins.Description=Description
+        ins.save()
+        return render(request, 'structure1.html')
+
+    return render(request, 'manage.html')
+
+def subcategory(request):
+
+    if request.method == "POST":
+        Title = request.POST["Title"]
+        Description = request.POST["Description"]
+        Category=request.POST["Category"]
+        inx= db_subcategory()
+        inx.Title=Title
+        inx.Description=Description
+        inx.Category=Category
+        inx.save()
+        return render(request, 'structure1.html',{'xyz':"data saved succesfully"})
+
+    return render(request,'manage.html')
+
+def view_data(request):
+    alldata = db_category.objects.all()
+    context = {'alldata': alldata}
+    return render(request,"viewdata.html",context);
+
+def view_sublist(request):
+    alldatas = db_subcategory.objects.all()
+    context1 = {'alldatas': alldatas}
+    return render(request, "viewsublist.html", context1);
