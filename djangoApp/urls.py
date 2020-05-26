@@ -27,6 +27,7 @@ urlpatterns = [
     path('consortium', staticviews.consortium, name="consortium"),
     path('academy', staticviews.academy, name="academy"),
     path('products', staticviews.products, name="products"),
+    path('program',staticviews.program,name="program"),
     # Contact forms
     path('contact/contactform', staticviews.contactform, name="contactform"),
     path('contact/academycontact', staticviews.academycontact, name="academycontact"),
@@ -76,6 +77,9 @@ urlpatterns = [
     path('instructor/instructor_list', loginviews.instructor_list, name='instructor_list'),
     path('college/college_list', loginviews.college_list, name='college_list'),
     path('organisation/organisation_list', loginviews.organisation_list, name='organisation_list'),
+
+
+
     path('course/list_course', courseviews.course_list, name="course_list"),
     path('course/new_course', courseviews.new_course, name="new_course"),
     path('course/course_resource', courseviews.course_resource, name="course_resource"),
@@ -103,6 +107,7 @@ urlpatterns = [
     path('business/operations', staticviews.operations, name="operations"),
     path('business/Application', staticviews.Application, name="Application"),
     # Courses
+    path('courses/ui',courseviews.ui,name="ui"),
     path('courses/uicourses', courseviews.uicourses, name="uicourses"),
     path('courses/backend', courseviews.backend, name="backend"),
     path('courses/fullstack', courseviews.fullstack, name="fullstack"),
@@ -116,14 +121,15 @@ urlpatterns = [
     path('courses/erp', courseviews.erp, name="erp"),
     path('courses/it', courseviews.it, name="it"),
     path('courses/itcertification', courseviews.itcertification, name="itcertification"),
-    path('courses/coursespage/coreui', courseviews.coreui, name="coreui"),
-    path('courses/coursespage/advancedui', courseviews.advancedui, name="advancedui"),
-    path('courses/coursespage/angularjs', courseviews.angularjs, name="angularjs"),
-    path('courses/coursespage/reactjs', courseviews.reactjs, name="reactjs"),
-    path('courses/coursespage/vuejs', courseviews.vuejs, name="vuejs"),
-    path('courses/coursespage/java', courseviews.java, name="java"),
-    path('courses/coursespage/.net', courseviews.net, name=".net"),
-    path('courses/coursespage/nodejs', courseviews.nodejs, name="nodejs"),
+    path('courses/coreui', courseviews.coreui, name="coreui"),
+    path('courses/advancedui', courseviews.advancedui, name="advancedui"),
+    path('courses/angularjs', courseviews.angularjs, name="angularjs"),
+    path('courses/reactjs', courseviews.reactjs, name="reactjs"),
+    path('courses/vuejs', courseviews.vuejs, name="vuejs"),
+    path('courses/java', courseviews.java, name="java"),
+    path('courses/.net', courseviews.net, name=".net"),
+    path('courses/nodejs', courseviews.nodejs, name="nodejs"),
+    path('courses/devopsfoundation',courseviews.devopsfoundation,name="foun"),
     # Read more
     path('coursedetails', courseviews.coursedetails, name="coursedetails"),
 ]

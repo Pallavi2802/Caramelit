@@ -71,21 +71,23 @@
 						<p> Be the first person to transform yourself with our unique & world class corporate level trainings & industry specific real time scenario based hands-on assignments </p>
 						<div class="learn3">
 						<a href="#learnmore" class="express-btn">LEARN MORE</a>
-						<a href="{% static 'broouchure.pdf' %}" download class="banner2 ml-lg-5">DOWNLOAD</a>
+						<a href="{% static 'staticHome/broouchure.pdf' %}"  download class="banner2 ml-lg-5">DOWNLOAD</a>
+                            <br>
 						</div>
 						</div>
 					</div>
-
 					 <div class="col-md-6 col-lg-6 col-12 text-center1">
+                         <br>
+                         <br>
 						<!-- <div data-aos="fade-left"data-aos-duration="2000"> -->
  							<img src="{% static 'staticHome/images/show4.png' %}" width="100%" height="60%" >
 						</div>
-
+						
 <!-- 					</div>
  -->				</div>
 			</section>
-		</div>
-
+		</div>	
+<br>
 <!-------------------FEATURE START-------------------------->
 
 	<section class="feature-section" id="feature">
@@ -94,72 +96,313 @@
 	<img src="{% static 'staticHome/images/show5.png' %}" class="img-fluid" id="whywe">
 	</div>
 	<div class="col-lg-6 col-md-6 col-12">
-	<h2 class="font-weight-bold tophead2" style="color: rgba(0,191,255 ,1)">WHY WE ARE</h2>
-		</div>
+	<h2 class="font-weight-bold tophead2" style="color: rgba(0,191,255 ,1);margin-left: 140px;">WHY CARAMEL IT</h2><p class="para-side">SHOW MORE</p>
+	<button class="collapse-btn" data-toggle="collapse" data-target="#demo" ><img src="{% static 'staticHome/images/drop-down-arrow.png' %}"  style="height:20px;width:20px;" alt="" srcset=""></button>
+    </div>
 	</div>
+        <div class="container-fluid"  >
+		<div class="row">
 
-	<div class="container-fluid">
-		<div class="row banner3">
+			<div class="col-md-12 col-lg-12 col-12 ">
 
-			<div class="col-md-6 col-lg-6 col-12">
-				<!-- <div data-aos="fade-right"data-aos-duration="2000"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"> -->
-     				<img src="{% static 'staticHome/images/show6.png' %}" width="100%" height="80%">
+	 <a href="https://caramelit.com/"><img id="demo" class="collapse" src="{% static 'staticHome/images/caramelitservices.png' %}" style="width:100%;height: auto"></a>
 
-<!-- </div> -->
-			</div>
-
-		<div class="feature1 col-lg-6 col-md-6 col-12">
-				<!-- <div data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500"> -->
-<h1 class="padd" > WE ARE HERE TO GUIDE </h1>
-				<p class="padd"> The programing language enables us to write client programs and develop
-					online solutions such as - mobile applications, web applications, and games, etc. Programming is used to
-				automate, maintain, assemble, measure and interpret the processing of the data and information.</p>
-				<div class="learn2">
-					<!-- <a href="#ourprogram" class="express-btn">LEARN MORE</a> -->
-				<a href="{% static 'broouchure.pdf' %}" download class="banner2 ml-lg-5">DOWNLOAD</a>
-				</div>
-<!-- </div> -->
 
 			</div>
 		</div>
 
 </div>
+
+
 </section>
 <!-------------------FEATURE END-------------------------->
 <!-------------------JOINING START-------------------------->
-<!------------------JOINING END-------------------------->
-<!-------------------WORKING START----------------------->
+	<style>
+.eval{
+  float: center;
+  overflow: hidden;
+  background-color: transparent;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.evalbtn{
+ color: white;
+  float : center;
+  cursor: pointer;
+  font-size: 28px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: transparent;
+  font-family: inherit;
+  margin: 0;
+}
+.evalbtn:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
 
-<!--------------<div class="row py-5" id="learnmore">
-	<div class=" col-lg-4 col-md-6 col-12 ">
-		 <img src="images/show18.png" class="img-fluid imgwidth"> -->
+.enrol{
+  position: relative;
+  text-align: center;
+  color: #50AED7;
+ }
+.custom-select {
+  float: center;
+  border:none;
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  font-size: 30px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-<!--------WORKING END-------------------------->
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: transparent;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: none;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: transparent;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+</style>
+<body>
+<!-------------------JOINING END-------------------------->
+<!-------------------WORKING START-------------------------->
+<div class="row py-5" id="learnmore">
+      <div class="col-lg-4 col-md-6 col-12">
+        <!-- <img src="images/show18.png" class="img-fluid imgwidth"> -->
+        <img
+          src="{% static 'staticHome/images/show11.png' %}"
+          class="mx-0 px-0"
+          style="width: 100% !important; height: 100% !important;"
+        />
+      </div>
+      <div class="col-lg-8 col-md-6 col-12">
+        <h2
+          class="font-weight-bold tophead1"
+          style="color: rgba(124, 77, 255, 1);"
+        >
+          LET US KNOW MORE ABOUT YOU
+        </h2>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div id="no-space" class="col-md-12 col-lg-12 col-12">
+          <div class="middleblock">
+            <br />
+            <center>
+              <div class="sel sel--black-panther" onclick="vis();">
+                <select
+                  name="select-profession"
+                  id="select-profession"
+                  onclick="vis();"
+                >
+                  <option value="">Select your Option</option>
+                  <option value="going-back" onclick="mis();"
+                    >Select your Option</option
+                  >
+                  <option value="hacker" onclick="vis();"
+                    >Student (with no IT Knowledge)</option
+                  >
+                  <option value="gamer" onclick="vis();"
+                    >Student (with some IT Knowledge)</option
+                  >
+                  <option value="developer" onclick="vis();"
+                    >Professional (with no IT Experience)</option
+                  >
+                  <option value="programmer" onclick="vis();"
+                    >Professional (with IT Experience)</option
+                  >
+                </select>
+              </div>
+              <hr class="rule" />
+            </center>
+
+            <div id="middlebox">
+              <a href="https://caramelit.com/">
+                <div class="counselling" style="margin-left: 10%;">
+                  <h2>COUNSELLING</h2>
+                  <br /></div
+              ></a>
+              <div style="display: flex; align-items: flex-end;margin-left:20%;">
+                <img
+                  src="{% static 'staticHome/images/arrow.png' %}"
+                  class="midarrow"
+                  style="width: 8%; height: 8%;"
+                />
+                <div class="eval" style="margin-left: 25%;margin-top: 5%;">
+                  <a href="https://caramelit.com/">
+                    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PROFILE EVALUATION</h2></a
+                  >
+                  <br />
+                </div>
+              </div>
+              <div
+                style="display: flex; align-items: flex-end; margin-left: 36%;"
+              >
+                <img src="{% static 'staticHome/images/arrow.png' %}" style="margin-left: 60%;"class="midarrow" />
+                <div class="recommend" >
+                  <a href="https://caramelit.com/"> <h2>RECOMMENDATION</h2></a>
+                  <br />
+                </div>
+              </div>
+            </div>
+            <div class="enrollment">
+              <a href="#"><h1>ENROLLMENT</h1></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function vis() {
+        document.getElementById("middlebox").style.visibility = "visible";
+      }
+      function dis() {
+        document.getElementById("middlebox").style.visibility = "visible";
+      }
+      $(".sel").each(function () {
+        $(this).children("select").css("display", "none");
+
+        var $current = $(this);
+
+        $(this)
+          .find("option")
+          .each(function (i) {
+            if (i == 0) {
+              $current.prepend(
+                $("<div>", {
+                  class: $current.attr("class").replace(/sel/g, "sel__box"),
+                })
+              );
+
+              var placeholder = $(this).text();
+              $current.prepend(
+                $("<span>", {
+                  class: $current
+                    .attr("class")
+                    .replace(/sel/g, "sel__placeholder"),
+                  text: placeholder,
+                  "data-placeholder": placeholder,
+                })
+              );
+
+              return;
+            }
+
+            $current.children("div").append(
+              $("<span>", {
+                class: $current
+                  .attr("class")
+                  .replace(/sel/g, "sel__box__options"),
+                text: $(this).text(),
+              })
+            );
+          });
+      });
+
+      // Toggling the `.active` state on the `.sel`.
+      $(".sel").click(function () {
+        $(this).toggleClass("active");
+      });
+
+      // Toggling the `.selected` state on the options.
+      $(".sel__box__options").click(function () {
+        var txt = $(this).text();
+        var index = $(this).index();
+
+        $(this).siblings(".sel__box__options").removeClass("selected");
+        $(this).addClass("selected");
+
+        var $currentSel = $(this).closest(".sel");
+        $currentSel.children(".sel__placeholder").text(txt);
+        $currentSel.children("select").prop("selectedIndex", index + 1);
+      });
+    </script>
+
+
 <section class="working-section" id="working">
-	<div class="row py-5">
-		<div class="col-lg-8 col-md-6 col-12">
+      <div class="row py-5">
+        <div class="col-lg-8 col-md-6 col-12">
+          <h2
+            class="font-weight-bold tophead1 text-right"
+            style="color: rgba(0, 191, 255, 1);"
+          >
+            <button
+              class="collapse-btn-2"
+              id="margin-lefts"
+              data-toggle="collapse"
+              data-target="#colaapse"
+            >
+              <img src="{% static 'staticHome/images/drop-down-arrow.png' %}" alt="" srcset="" />
+            </button>
+            <p class="m-left">SHOW MORE</p>
+            HOW WE WORK
+          </h2>
+        </div>
 
-			<h2 class="font-weight-bold tophead1 text-right" style="color: rgba(0,191,255 ,1)">	<button class="collapse-btn-2" id="margin-left" data-toggle="collapse" data-target="#colaapse" ><img src="{% static 'staticHome/images/dropdown.png' %}" alt="" srcset="" width="20" height="10"></button> <p class="m-left">SHOW MORE</p> HOW WE WORK</h2>
-
-		</div>
-
-	<div class="col-lg-4 col-md-6 col-12">
-	<img src="{% static 'staticHome/images/show18.png' %}" class="img-fluid imgwidth">
-	</div>
-	</div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <img src="{% static 'staticHome/images/show18.png' %}" class="img-fluid imgwidth" />
+        </div>
+      </div>
 	<div class="container">
 	<div class="row">
 		<!-- <div class="col-md-1">
 
 		</div> -->
-		<div id="colaapse" >
-			<div><a href="recpage.html"><img src="{% static 'staticHome/images/w23.png' %}"></a></div>
+		<div id="colaapse" class="col-md-12" >
 
-
+			<img class="desktop-view"  src="{% static 'staticHome/images/w23.jpg' %}" style="width: 1000px ;height: 500px;">
 
 	</div>
 		<!-- <div class="col-md-1">
@@ -170,343 +413,1508 @@
 </section>
 
 
-<!-------------------WORKING END-------------------------->
+
+
+<!--------WORKING END-------------------------->
+
+
 <!-------------------PROGRAMS START-------------------------->
-<section class="program-section" id="ourprogram">
-	<div class="row py-5">
-	<div class="col-lg-4 col-md-6 col-10">
-	<img src="{% static 'staticHome/images/show5.png' %}" class="img-fluid">
-	</div>
-	<div class="col-lg-6 col-md-6 col-12" style="margin-left:40px;">
-	<h2 class="font-weight-bold tophead" style="color: rgba(0,191,255 ,1)">OUR PROGRAMS</h2>
-	</div>
-	</div>
-	<div class="container-fluid back">
-
-		<div class="row wor">
-			<div class="col-lg-12 col-sm-12 Drive">
-
-				<h1 id="h" style="font-weight: bold;letter-spacing: 2px;font-size: 40px;margin-top: 43px;margin-left: 17px;text-align: center; color: white;">Drive Your Transformation With Us</h1>
-				<p id="programpara" style="text-align: center; margin-left: 16px;font-weight: bold; padding-top: 10px;color: white;">Collaboration Platform For All Your Technical Training Needs.<br>
-				<span style="color:#07ef07;">Join Us Today.</span></p>
-				<div >
-					     <!-- input tag -->
-	<!-- <input id="searchbar" onkeyup="search_course()" type="text"
+    <!-------------------WORKING END-------------------------->
+    <!-------------------PROGRAMS START-------------------------->
+    <section class="program-section" id="ourprogram">
+      <div class="row py-5">
+        <div class="col-lg-4 col-md-6 col-10">
+          <img src="{% static 'staticHome/images/show5.png' %}" class="img-fluid" />
+        </div>
+        <div class="col-lg-6 col-md-6 col-12" style="margin-left: 40px;">
+          <h2
+            class="font-weight-bold tophead1"
+            style="color: rgba(124, 77, 255, 1);"
+          >
+            OUR PROGRAMS
+          </h2>
+        </div>
+      </div>
+      <div class="container-fluid back" style="height:750px">
+        <div class="row wor">
+          <div class="col-lg-12 col-sm-12 Drive">
+            <h1
+              id="h"
+              style="
+                font-weight: bold;
+                letter-spacing: 2px;
+                font-size: 40px;
+                margin-top: 43px;
+                margin-left: 17px;
+                text-align: center;
+                color: white;
+              "
+            >
+              Drive Your Transformation With Us
+            </h1>
+            <p
+              id="programpara"
+              style="
+                text-align: center;
+                margin-left: 16px;
+                font-weight: bold;
+                padding-top: 10px;
+                color: white;
+              "
+            >
+              Collaboration Platform For All Your Technical Training Needs.<br />
+              <span style="color: #07ef07;">Join Us Today.</span>
+            </p>
+            <div>
+              <!-- input tag -->
+              <!-- <input id="searchbar" onkeyup="search_course()" type="text"
 
 
         name="search" placeholder="Search courses..">  -->
-				</div>
-			</div>
-			<div class="col-lg-12 col-sm-12 progra" >
-				<div class="first">
-					
-				<div class="row">
-					
-				<div class="owl-carousel owl-theme" id="slider">	
-					<div class="second">
-						<div class="third" >
-							<a href="courses/uicourses"><img src="{% static 'staticHome/images/core ui.jpeg' %}"></a>
-						</div>
-						<div class="four" >
-							<p>CoreUI</p>
-						</div>
-					</div>
-					
-					
-					<div class="second">
-						<div class="third" >
-							<a href="courses/backend"><img src="{% static 'staticHome/images/backend2.jpg' %}"></a>
-						</div>
-						<div class="four" >
-							<p>Back End</p>
-						</div>
-					</div>
-					
-					
-					<div class="second ">
-						<div class="third" >
-							<a href="courses/fullstack"><img src="{% static 'staticHome/images/fullstack1.jpg' %}"></a>
-						</div>
-						<div class="four" >
-							<P>Full Stack</P>
-						</div>
-					</div>
-					
-					
+            </div>
+          </div>
 
-					<div class="second">
-						<div class="third" >
-							<a href="courses/functionaltesting"><img src="{% static 'staticHome/images/functionaltesting.png' %}"></a>
-						</div>
-						<div class="four" >
-							<p>Functional Testing</p>
-						</div>
-					</div>
+              <div class="ruby-menu-demo-header">
+                <!-- ########################### -->
+                <!-- START: RUBY HORIZONTAL MENU -->
+                <div class="ruby-wrapper">
+                  <ul class="ruby-menu ruby-menu-dividers">
+                    <li class="ruby-menu-mega-shop">
+                      <a href="/program">Software Development</a>
+                      <div style="height: 700px;">
+                        <ul>
+                          <li
 
-					<div class="second">
-						<div class="third" >
-							<a href="courses/mobility"><img src="{% static 'staticHome/images/mobility1.jpg' %}"></a>
-						</div>
-						<div class="four" >
-							<P>Mobility</P>
-						</div>
-					</div>
-					
-					<div class="second">
-						<div class="third" >
-							<a href="courses/devops"><img src="{% static 'staticHome/images/devops1.jpg' %}"></a>
-						</div>
-						<div class="four" >
-							<P>DevOps</P>
-						</div>
-					</div>
-					<div class="second">
-						<div class="third" >
-							<a href="courses/datascience"><img src="{% static 'staticHome/images/datascience1.jpg' %}"></a>
-						</div>
-						<div class="four" >
-							<P>Data Science & AI/ML</P>
-						</div>
-					</div>
-					<div class="second">
-						<div class="third" >
-							<a href="courses/cloud"><img src="{% static 'staticHome/images/cloudcomputing1.jpg' %}"></a>
-						</div>
-						<div class="four" >
-							<P>Cloud Computing</P>
-						</div>
-					</div>
-					<div class="second">
-						<div class="third" >
-							<a href="courses/cyber"><img src="{% static 'staticHome/images/cyber.jpg' %}"></a>
-						</div>
-						<div class="four" >
-							<p>Cyber Security</p>
-						</div>
-					</div>
-					<div class="second">
-						<div class="third" >
-							<a href="courses/digital"><img src="{% static 'staticHome/images/digi1.jpg' %}"></a>
-						</div>
-						<div class="four" >
-							<p>Digital Marketing</p>
-						</div>
-					</div>
-					<div class="second">
-						<div class="third" >
-							<a href="courses/erp"><img src="{% static 'staticHome/images/erp2.jpg' %}"></a>
-						</div>
-						<div class="four" >
-							<p>ERP</p>
-						</div>
-					</div>
-					<div class="second">
-						<div class="third" >
-							<a href="courses/it"><img src="{% static 'staticHome/images/IT2.jpg' %}"></a>
-						</div>
-						<div class="four" >
-							<p>IT</p>
-						</div>
-					</div>
-					<div class="second">
-						<div class="third" >
-							<a href="courses/itcertification"><img src="{% static 'staticHome/images/it.jpeg' %}"></a>
-						</div>
-						<div class="four" >
-							<p>IT Certifications</p>
-						</div>
-					</div>
+                            id="opt1"
+                            onmouseover="inFocus('opt1')"
+                            onmouseout="outFocus('opt1')"
+                          >
+                            <a href="#" >Front end</a>
+                            <div
+                              class="ruby-grid ruby-grid-lined"
+                              style="height: 264.359px;margin-top:70px"
+                            >
+                              <div class="ruby-row">
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
 
-					
+                                      <a href="/courses/coreui"
+                                        ><img src="{% static 'staticHome/images/core ui.jpeg' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>CoreUI</p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="/courses/advancedui"
+                                        ><img src="{% static 'staticHome/images/advancedui.jpg' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>Advanced UI</p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="/courses/angularjs"
+                                        ><img src="{% static 'staticHome/images/angular.png' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>Angular JS</p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="/courses/reactjs"
+                                        ><img
+                                          src="{% static 'staticHome/images/react2.jpg' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>React JS</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="/courses/vuejs"
+                                        ><img src="{% static 'staticHome/images/vue.jpg' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>Vue JS</p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                            <!-- <span class="ruby-dropdown-toggle"></span> -->
+                          </li>
+                          <li
+                            id="opt2"
+                            onmouseover="inFocus('opt2')"
+                            onmouseout="outFocus('opt2')"
+                          >
+                            <a href="#">Backend</a>
+                            <div
+                              class="ruby-grid ruby-grid-lined"
+                              style="height: 264.359px;margin-top:70px"
+                            >
+                              <div class="ruby-row">
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="/courses/java"
+                                        ><img src="{% static 'staticHome/images/java1.jpg' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>Java</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="/courses/.net"
+                                        ><img src="{% static 'staticHome/images/.net_1.jpg' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>.NET</p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="/courses/nodejs"
+                                        ><img src="{% static 'staticHome/images/nodejs.jpg' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>Node JS</p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="/courses/ruby"
+                                        ><img src="{% static 'staticHome/images/ruby.jpg' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>Ruby</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="/courses/python"
+                                        ><img src="{% static 'staticHome/images/ml python.png' %}""
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>Python</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <span class="ruby-dropdown-toggle"></span>
+                          </li>
+                          <li
+                            id="opt3"
+                            onmouseover="inFocus('opt3')"
+                            onmouseout="outFocus('opt3')"
+                          >
+                            <a href="#">Full Stack</a>
+                            <div
+                              class="ruby-grid ruby-grid-lined"
+                              style="height: 264.359px;margin-top:70px"
+                            >
+                              <div class="ruby-row">
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="/courses/corejava.html"
+                                        ><img src="{% static 'staticHome/images/core-java.jpg' %}""
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>Core Java</p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="courses/digital"
+                                        ><img src="{% static 'staticHome/images/digi1.jpg' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>.NET Core</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="courses/digital"
+                                        ><img src="{% static 'staticHome/images/mevn.jpg' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>MEVN</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="courses/digital"
+                                        ><img src="{% static 'staticHome/images/advancejava.jpg' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>Advanced Java</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="courses/digital.html"
+                                        ><img src="{% static 'staticHome/images/mean.jpg' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>MEAN</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="courses/digital"
+                                        ><img src="{% static 'staticHome/images/golang.jpg' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>Golang</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="courses/digital.html"
+                                        ><img src="{% static 'staticHome/images/.net_1.jpg' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>.NET</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="courses/digital.html"
+                                        ><img src="{% static 'staticHome/images/measn.jpg' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>MEASN</p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="/courses/erp"
+                                        ><img src="{% static 'staticHome/images/ruby.jpg' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>Ruby</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <span class="ruby-dropdown-toggle"></span>
+                          </li>
+                          <li
+                            id="opt4"
+                            onmouseover="inFocus('opt4')"
+                            onmouseout="outFocus('opt4')"
+                          >
+                            <a href="#">Functional Testing</a>
+                            <div
+                              class="ruby-grid ruby-grid-lined"
+                              style="height: 264.359px;margin-top:70px"
+                            >
+                              <div class="ruby-row">
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="/courses/it"
+                                        ><img src="{% static 'staticHome/images/IT2.jpg' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>Manual Testing</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="/courses/it"
+                                        ><img src="{% static 'staticHome/images/automationtesting.png' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>Automation Testing</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="/courses/it"
+                                        ><img src="{% static 'staticHome/images/cloudtesting.png' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>Cloud Testing</p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="ruby-col-2">
+                                  <div class="second">
+                                    <div class="third">
+                                      <a href="/courses/itcertification"
+                                        ><img src="{% static 'staticHome/images/fullstacktesting.png' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="four">
+                                      <p>Full stack Testing</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <span class="ruby-dropdown-toggle"></span>
+                          </li>
+                          <li
+                          id="opt5"
+                          onmouseover="inFocus('opt5')"
+                          onmouseout="outFocus('opt5')"
+                        >
+                          <a href="#">Data Science</a>
+                          <div
+                            class="ruby-grid ruby-grid-lined"
+                            style="height: 264.359px;margin-top:70px"
+                          >
+                            <div class="ruby-row">
+                              <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/datascience"
+                                      ><img src="{% static 'staticHome/images/data science.png' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>DS Bootcamp</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/mobility"
+                                      ><img src="{% static 'staticHome/images/mobility1.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>Data Science Certification</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/devops"
+                                      ><img src="{% static 'staticHome/images/ai ml.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>AI/ML Expert Course</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/devops"
+                                      ><img src="{% static 'staticHome/images/mlpython.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>Ml with python</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/devops"
+                                      ><img src="{% static 'staticHome/images/natural.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>Natural language processing</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/devops"
+                                      ><img src="{% static 'staticHome/images/hadoop.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>Hadoop</p>
+                                  </div>
+                                </div>
+                              </div><div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/devops"
+                                      ><img src="{% static 'staticHome/images/deeplearning1.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>Deep Learning</p>
+                                  </div>
+                                </div>
+                              </div><div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/devops"
+                                      ><img src="{% static 'staticHome/images/r pro.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>R Programming</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/devops"
+                                      ><img src="{% static 'staticHome/images/data analytics.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>Data Analytics</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/cloud"
+                                      ><img src="{% static 'staticHome/images/aimlexpert.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>AI/ML Foundation Course</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <span class="ruby-dropdown-toggle"></span>
+                        </li>
+                        <li
+                          id="opt6"
+                          onmouseover="inFocus('opt6')"
+                          onmouseout="outFocus('opt6')"
+                        >
+                          <a href="#">Mobility</a>
+                          <div
+                            class="ruby-grid ruby-grid-lined"
+                            style="height: 264.359px;margin-top:70px"
+                          >
+                            <div class="ruby-row">
+                              <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/datascience"
+                                      ><img src="{% static 'staticHome/images/flutter.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>Flutter</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/mobility"
+                                      ><img src="{% static 'staticHome/images/xamarin.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>Xamarin</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/devops"
+                                      ><img src="{% static 'staticHome/images/android1.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>Android</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/cloud"
+                                      ><img src="{% static 'staticHome/images/ionic1.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>Ionic</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                                <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/devops"
+                                      ><img src="{% static 'staticHome/images/onsenui.png' %}""
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>Onsen UI</p>
+                                  </div>
+                                </div>
+                              </div>
+                                <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/devops"
+                                      ><img src="{% static 'staticHome/images/reactnative.png' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>React Native</p>
+                                  </div>
+                                </div>
+                              </div>
+                                <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/devops"
+                                      ><img src="{% static 'staticHome/images/ios.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>IOS</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                          <span class="ruby-dropdown-toggle"></span>
+                        </li>
+                        <li
+                        id="opt7"
+                        onmouseover="inFocus('opt8')"
+                        onmouseout="outFocus('opt8')"
+                      >
+                        <a href="#">DevOps</a>
+                        <div
+                          class="ruby-grid ruby-grid-lined"
+                          style="height: 264.359px;margin-top:70px"
+                        >
+                          <div class="ruby-row">
+                            <div class="ruby-col-2">
+                              <div class="second">
+                                <div class="third">
+                                  <a href="/courses/datascience"
+                                    ><img src="{% static 'staticHome/images/devopsfound.jpg' %}"
+                                  /></a>
+                                </div>
+                                <div class="four">
+                                  <p>Devops Foundation</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="ruby-col-2">
+                              <div class="second">
+                                <div class="third">
+                                  <a href="/courses/mobility"
+                                    ><img src="{% static 'staticHome/images/devops expert.jpg'%}"
+                                  /></a>
+                                </div>
+                                <div class="four">
+                                  <p>Devops expert</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="ruby-col-2">
+                              <div class="second">
+                                <div class="third">
+                                  <a href="/courses/devops"
+                                    ><img src="{% static 'staticHome/images/ansible1.jpg' %}"
+                                  /></a>
+                                </div>
+                                <div class="four">
+                                  <p>Ansibe</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="ruby-col-2">
+                              <div class="second">
+                                <div class="third">
+                                  <a href="/courses/cloud"
+                                    ><img src="{% static 'staticHome/images/chef.jpg' %}"
+                                  /></a>
+                                </div>
+                                <div class="four">
+                                  <p>CHEF</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="ruby-col-2">
+                              <div class="second">
+                                <div class="third">
+                                  <a href="/courses/datascience"
+                                    ><img src="{% static 'staticHome/images/dockers.jpg' %}"
+                                  /></a>
+                                </div>
+                                <div class="four">
+                                  <p>Dockers</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="ruby-col-2">
+                              <div class="second">
+                                <div class="third">
+                                  <a href="/courses/datascience"
+                                    ><img src="{% static 'staticHome/images/kubernetes.png' %}"
+                                  /></a>
+                                </div>
+                                <div class="four">
+                                  <p>Kubernets</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="ruby-col-2">
+                              <div class="second">
+                                <div class="third">
+                                  <a href="/courses/datascience"
+                                    ><img src="{% static 'staticHome/images/open stack.jpg' %}"
+                                  /></a>
+                                </div>
+                                <div class="four">
+                                  <p>Open Stack</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="ruby-dropdown-toggle"></span>
+                      </li>
+                      <li
+                      id="opt9"
+                      onmouseover="inFocus('opt9')"
+                      onmouseout="outFocus('opt9')"
+                    >
+                      <a href="#">Cloud Computing</a>
+                      <div
+                        class="ruby-grid ruby-grid-lined"
+                        style="height: 264.359px;"
+                      >
+                        <div class="ruby-row">
+                          <div class="ruby-col-2">
+                            <div class="second">
+                              <div class="third">
+                                <a href="/courses/datascience"
+                                  ><img src="{% static 'staticHome/images/awsdeveloper1.png' %}"
+                                /></a>
+                              </div>
+                              <div class="four">
+                                <p>AWS Technical Essentials</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ruby-col-2">
+                            <div class="second">
+                              <div class="third">
+                                <a href="/courses/mobility"
+                                  ><img src="{% static 'staticHome/images/awscloud2.jpg' %}"
+                                /></a>
+                              </div>
+                              <div class="four">
+                                <p>AWS Cloud Practioner</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="ruby-col-2">
+                            <div class="second">
+                              <div class="third">
+                                <a href="courses/devops"
+                                  ><img src="{% static 'staticHome/images/awssolutionarchi.jpg' %}"
+                                /></a>
+                              </div>
+                              <div class="four">
+                                <p>AWS Solution Architect Associate</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="ruby-col-2">
+                            <div class="second">
+                              <div class="third">
+                                <a href="/courses/cloud"
+                                  ><img src="{% static 'staticHome/images/aws developer.jpg' %}"
+                                /></a>
+                              </div>
+                              <div class="four">
+                                <p>AWS Developer Associate</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ruby-col-2">
+                            <div class="second">
+                              <div class="third">
+                                <a href="/courses/datascience"
+                                  ><img src="{% static 'staticHome/images/awssysops1.jpg' %}"
+                                /></a>
+                              </div>
+                              <div class="four">
+                                <p>AWS SysOps Associate Administrator/p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ruby-col-2">
+                            <div class="second">
+                              <div class="third">
+                                <a href="/courses/datascience"
+                                  ><img src="{% static 'staticHome/images/microsoft.jpg' %}"
+                                /></a>
+                              </div>
+                              <div class="four">
+                                <p>Microsoft Azure Fundementals/p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ruby-col-2">
+                            <div class="second">
+                              <div class="third">
+                                <a href="/courses/datascience"
+                                  ><img src="{% static 'staticHome/images/azurefun.jpg' %}"
+                                /></a>
+                              </div>
+                              <div class="four">
+                                <p>Microsoft Azure Certification</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <span class="ruby-dropdown-toggle"></span>
+                    </li>
+                    <li
+                          id="opt10"
+                          onmouseover="inFocus('opt10')"
+                          onmouseout="outFocus('opt10')"
+                        >
+                          <a href="#">Cyber security</a>
+                          <div
+                            class="ruby-grid ruby-grid-lined"
+                            style="height: 264.359px;"
+                          >
+                            <div class="ruby-row">
+                              <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/datascience"
+                                      ><img src="{% static 'staticHome/images/cissp.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>CISSP</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/mobility"
+                                      ><img src="{% static 'staticHome/images/cisa1.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>CISA</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/devops"
+                                      ><img src="{% static 'staticHome/images/ceh.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>CEH</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/cloud"
+                                      ><img src="{% static 'staticHome/images/comptia-security-plus.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>Comptia Security ++</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="ruby-col-2">
+                                <div class="second">
+                                  <div class="third">
+                                    <a href="/courses/devops"
+                                      ><img src="{% static 'staticHome/images/cism1.jpg' %}"
+                                    /></a>
+                                  </div>
+                                  <div class="four">
+                                    <p>CISM</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <span class="ruby-dropdown-toggle"></span>
+                        </li>
+                        <li
+                        id="opt11"
+                        onmouseover="inFocus('opt11')"
+                        onmouseout="outFocus('opt11')"
+                      >
+                        <a href="#">Information Technology</a>
+                        <div
+                          class="ruby-grid ruby-grid-lined"
+                          style="height: 264.359px;"
+                        >
+                          <div class="ruby-row">
+                            <div class="ruby-col-2">
+                              <div class="second">
+                                <div class="third">
+                                  <a href="/courses/datascience"
+                                    ><img src="{% static 'staticHome/images/sales force.jpg' %}"
+                                  /></a>
+                                </div>
+                                <div class="four">
+                                  <p>SalesForce</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="ruby-col-2">
+                              <div class="second">
+                                <div class="third">
+                                  <a href="/courses/mobility"
+                                    ><img src="{% static 'staticHome/images/service-now.png' %}"
+                                  /></a>
+                                </div>
+                                <div class="four">
+                                  <p>Service Now</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="ruby-col-2">
+                              <div class="second">
+                                <div class="third">
+                                  <a href="/courses/devops"
+                                    ><img src="{% static 'staticHome/images/remedy.png' %}"
+                                  /></a>
+                                </div>
+                                <div class="four">
+                                  <p>Remedy</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="ruby-col-2">
+                              <div class="second">
+                                <div class="third">
+                                  <a href="/courses/cloud"
+                                    ><img src="{% static 'staticHome/images/microdynamics.jpg' %}"
+                                  /></a>
+                                </div>
+                                <div class="four">
+                                  <p>Micro Dynamics</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="ruby-dropdown-toggle"></span>
+                      </li>
+                      <li
+                      id="opt12"
+                      onmouseover="inFocus('opt12')"
+                      onmouseout="outFocus('opt12')"
+                    >
+                      <a href="#">IT Certifications</a>
+                      <div
+                        class="ruby-grid ruby-grid-lined"
+                        style="height: 264.359px;"
+                      >
+                        <div class="ruby-row">
+                          <div class="ruby-col-2">
+                            <div class="second">
+                              <div class="third">
+                                <a href="/courses/datascience"
+                                  ><img src="{% static 'staticHome/images/itil.png' %}"
+                                /></a>
+                              </div>
+                              <div class="four">
+                                <p>ITIL Foundation</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ruby-col-2">
+                            <div class="second">
+                              <div class="third">
+                                <a href="/courses/mobility"
+                                  ><img src="{% static 'staticHome/images/pmp.jpg' %}"
+                                /></a>
+                              </div>
+                              <div class="four">
+                                <p>PMP</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="ruby-col-2">
+                            <div class="second">
+                              <div class="third">
+                                <a href="/courses/devops"
+                                  ><img src="{% static 'staticHome/images/PMI-ACP.jpg' %}"
+                                /></a>
+                              </div>
+                              <div class="four">
+                                <p>PMI-ACP</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="ruby-col-2">
+                            <div class="second">
+                              <div class="third">
+                                <a href="/courses/cloud"
+                                  ><img src="{% static 'staticHome/images/Agile.jpg' %}"
+                                /></a>
+                              </div>
+                              <div class="four">
+                                <p>Agile</p>
+                              </div>
+                            </div>
+                          </div>
+                                <div class="ruby-col-2">
+                            <div class="second">
+                              <div class="third">
+                                <a href="/courses/cloud."
+                                  ><img src="{% static 'staticHome/images/prince1.jpg' %}"
+                                /></a>
+                              </div>
+                              <div class="four">
+                                <p>Prince2</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <span class="ruby-dropdown-toggle"></span>
+                    </li>
+
+                    <li
+                    id="opt13"
+                    onmouseover="inFocus('opt13')"
+                    onmouseout="outFocus('opt13')"
+                  >
+                    <a href="#">ERP</a>
+                    <div
+                      class="ruby-grid ruby-grid-lined"
+                      style="height: 264.359px;"
+                    >
+                      <div class="ruby-row">
+                        <div class="ruby-col-2">
+                          <div class="second">
+                            <div class="third">
+                              <a href="/courses/datascience"
+                                ><img src="{% static 'staticHome/images/datascience1.jpg' %}"
+                              /></a>
+                            </div>
+                            <div class="four">
+                              <p>SAP</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ruby-col-2">
+                          <div class="second">
+                            <div class="third">
+                              <a href="/courses/mobility.html"
+                                ><img src="{% static 'staticHome/images/oracle.jpg' %}"
+                              /></a>
+                            </div>
+                            <div class="four">
+                              <p>Oracle</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="ruby-col-2">
+                          <div class="second">
+                            <div class="third">
+                              <a href="/courses/devops"
+                                ><img src="{% static 'staticHome/images/infor ln.jpg' %}"
+                              /></a>
+                            </div>
+                            <div class="four">
+                              <p>Infor LN</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="ruby-col-2">
+                          <div class="second">
+                            <div class="third">
+                              <a href="/courses/cloud"
+                                ><img src="{% static 'staticHome/images/Rootstock.png' %}"
+                              /></a>
+                            </div>
+                            <div class="four">
+                              <p>Root Stack</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="ruby-dropdown-toggle"></span>
+                  </li>
+                  <li
+                  id="opt14"
+                  onmouseover="inFocus('opt14')"
+                  onmouseout="outFocus('opt14')"
+                >
+                  <a href="#">Digital Marketing</a>
+                  <div
+                    class="ruby-grid ruby-grid-lined"
+                    style="height: 264.359px;"
+                  >
+                    <div class="ruby-row">
+                      <div class="ruby-col-2">
+                        <div class="second">
+                          <div class="third">
+                            <a href="/courses/datascience"
+                              ><img src="{% static 'staticHome/images/digifoundation.jpg' %}"
+                            /></a>
+                          </div>
+                          <div class="four">
+                            <p>Digital Marketing Foundation</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ruby-col-2">
+                        <div class="second">
+                          <div class="third">
+                            <a href="/courses/mobility"
+                              ><img src="{% static 'staticHome/images/digimarketexpert.jpg' %}"
+                            /></a>
+                          </div>
+                          <div class="four">
+                            <p>Digital Marketing Expert</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="ruby-col-2">
+                        <div class="second">
+                          <div class="third">
+                            <a href="/courses/devops"
+                              ><img src="{% static 'staticHome/images/seo.jpg' %}"
+                            /></a>
+                          </div>
+                          <div class="four">
+                            <p>SEO</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="ruby-col-2">
+                        <div class="second">
+                          <div class="third">
+                            <a href="/courses/cloud.html"
+                              ><img src="{% static 'staticHome/images/smo.jpg' %}"
+                            /></a>
+                          </div>
+                          <div class="four">
+                            <p>SMO</p>
+                          </div>
+                        </div>
+                      </div>
+                                            <div class="ruby-col-2">
+                        <div class="second">
+                          <div class="third">
+                            <a href="/courses/cloud"
+                              ><img src="{% static 'staticHome/images/scm1.jpg' %}"
+                            /></a>
+                          </div>
+                          <div class="four">
+                            <p>SCM</p>
+                          </div>
+                        </div>
+                      </div>
+                                            <div class="ruby-col-2">
+                        <div class="second">
+                          <div class="third">
+                            <a href="/courses/cloud"
+                              ><img src="{% static 'staticHome/images/smm.jpg' %}"
+                            /></a>
+                          </div>
+                          <div class="four">
+                            <p>SMM</p>
+                          </div>
+                        </div>
+                      </div>
+                                            <div class="ruby-col-2">
+                        <div class="second">
+                          <div class="third">
+                            <a href="/courses/cloud"
+                              ><img src="{% static 'staticHome/images/adwordfoun.png' %}"
+                            /></a>
+                          </div>
+                          <div class="four">
+                            <p>Adwards Foundation</p>
+                          </div>
+                        </div>
+                      </div>
+                                            <div class="ruby-col-2">
+                        <div class="second">
+                          <div class="third">
+                            <a href="/courses/cloud.html"
+                              ><img src="{% static 'staticHome/images/adwordexpert.jpg' %}"
+                            /></a>
+                          </div>
+                          <div class="four">
+                            <p>Adward Expert</p>
+                          </div>
+                        </div>
+                      </div>
+                                            <div class="ruby-col-2">
+                        <div class="second">
+                          <div class="third">
+                            <a href="/courses/cloud"
+                              ><img src="{% static 'staticHome/images/contentmarketing.png' %}"
+                            /></a>
+                          </div>
+                          <div class="four">
+                            <p>Content Marketing</p>
+                          </div>
+                        </div>
+                      </div>
+                                            <div class="ruby-col-2">
+                        <div class="second">
+                          <div class="third">
+                            <a href="/courses/cloud"
+                              ><img src="{% static 'staticHome/images/branding.jpg' %}"
+                            /></a>
+                          </div>
+                          <div class="four">
+                            <p>Branding</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="ruby-dropdown-toggle"></span>
+                </li>
+
+                        </ul>
+                      </div>
+                      <span class="ruby-dropdown-toggle"></span>
+                    </li>
+                    <li class="ruby-menu-mega-blog">
+                      <a href="program.html">Business Strategy</a>
+                      <div style="height: 269.359px;" class="">
+                        <ul class="ruby-menu-mega-blog-nav"></ul>
+                      </div>
+                      <span class="ruby-dropdown-toggle"></span>
+                    </li>
+
+                  </ul>
+                </div>
+                <!-- END:   RUBY HORIZONTAL MENU -->
+                <!-- ########################### -->
+              </div>
 
 
-					</div>
-					</div>
-					</div>
-						</div>		
-					</div>
-		</div>
-		<button class="tablink" onclick="openPage('Home', this, 'rgba(255,183,77 ,1)')" id="defaultOpen"><h3>All Courses</h3></button>
-		<button id="popular" class="tablink" onclick="openPage('News', this, 'rgba(255,183,77 ,1)')" ><h3>Popular Courses</h3></button>
-		<!-- <button class="tablink" onclick="openPage('Contact', this, 'rgba(255,183,77 ,1)')"><h3>Recent Courses</h3></button>
+
+              <!-- <div class="owl-carousel owl-theme" id="slider">
+
+					</div> -->
+            </div>
+
+      </div>
+
+
+      <button
+        class="tablink"
+        onclick="openPage('Home', this, 'rgba(255,183,77 ,1)')"
+        id="defaultOpen"
+      >
+        <h3>All Courses</h3>
+      </button>
+      <button
+        id="popular"
+        class="tablink"
+        onclick="openPage('News', this, 'rgba(255,183,77 ,1)')"
+      >
+        <h3>Popular Courses</h3>
+      </button>	<!-- <button class="tablink" onclick="openPage('Contact', this, 'rgba(255,183,77 ,1)')"><h3>Recent Courses</h3></button>
 		 --><!-- <button class="tablink" onclick="openPage('About', this, 'orange')">About</button> -->
 
 		<div id="Home" class="tabcontent" >
 			<div class="container-fluid" id="courses2" style="display: inline-block !important;padding-left: 60px;">
 				<!-- allcourses  -->
-					<div class="row " id="courses3">  
-							<div class="course" >  
-								<div class="sub" >  
-									<img src="{% static 'staticHome/images/core ui.jpeg' %}">  
-								</div>  
-								<div class="sub1">  
-									<h5>CoreUI</h5>  
-									  
-									<a href="courses/coursespage/coreui"><button id="read">KNOW MORE</button></a>  
-								</div>  
-							</div>  
-		<div class="course" >  
-			<div class="sub" >  
-				<img src="{% static 'staticHome/images/advancedui.jpg' %}">  
-			</div>  
-			<div class="sub1">  
-				<h5>Advanced UI</h5>  
-				  
-				<a href="courses/coursespage/advancedui"><button id="read">KNOW MORE</button></a>  
-			</div>  
-		</div>  
-		<div class="course" id="notreq" >  
-			<div class="sub" >  
-				<img src="{% static 'staticHome/images/angular.png' %}">  
-			</div>  
-			<div class="sub1">  
-				<h5>Angular JS</h5>  
-				 
-				<a href="courses/coursespage/angularjs"><button id="read">KNOW MORE</button></a>  
-			</div>  
-		</div>  
-		<div class="course"id="notreq" >  
-			<div class="sub" >  
-				<img src="{% static 'staticHome/images/react2.jpg' %}">  
-			</div>  
-			<div class="sub1">  
-				<h5>React JS</h5>  
-				  
-				<a href="courses/coursespage/reactjs"><button id="read">KNOW MORE</button></a>  
-			</div>  
-		</div>  
-		<div class="course"id="notreq" >  
-			<div class="sub" >  
-				<img src="{% static 'staticHome/images/vue.jpg' %}">  
-			</div>  
-			<div class="sub1">  
-				<h5>Vue Js</h5>  
-				  
-				<a href="courses/coursespage/vuejs"><button id="read">KNOW MORE</button></a>  
-			</div>  
-		</div>  
-		<div class="course" id="notreq">  
-			<div class="sub" >  
-				<img src="{% static 'staticHome/images/java1.jpg' %}">  
-			</div> 
-			<div class="sub1">  
-				<h5>JAVA</h5>  
-				  
-				<a href="courses/coursespage/java"><button id="read">KNOW MORE</button></a>  
-			</div>  
-		</div>  
-		<div class="course" id="notreq">  
-			<div class="sub" >  
-				<img src="{% static 'staticHome/images/.net_1.jpg' %}">  
-			</div>  
-			<div class="sub1">  
-				<h5>.NET</h5>  
-				  
-				<a href="courses/coursespage/.net"><button id="read">KNOW MORE</button></a>  
-			</div>  
-		</div>  
-		<div class="course" id="notreq">  
-			<div class="sub" >  
-				<img src="{% static 'staticHome/images/nodejs.jpg' %}">  
-			</div>  
-			<div class="sub1">  
-				<h5>Node JS</h5> 
-				  
-				<a href="courses/coursespage/nodejs"><button id="read">KNOW MORE</button></a>  
-			</div>  
-		</div> 
-	</div> 
-	<a href="coursedetails" id="know">READ MORE>></a>
-</div> 
+					<div class="row " id="courses3">
+							<div class="course" >
+								<div class="sub" >
+									<img src="{% static 'staticHome/images/core ui.png' %}">
+								</div>
+								<div class="sub1">
+									<h5>CoreUI</h5>
+
+									<a href="courses/coreui"><button id="read">KNOW MORE</button></a>
+								</div>
+							</div>
+		<div class="course" >
+			<div class="sub" >
+				<img src="{% static 'staticHome/images/advance.jpg' %}">
+			</div>
+			<div class="sub1">
+				<h5>Advanced UI</h5>
+
+				<a href="courses/advancedui"><button id="read">KNOW MORE</button></a>
+			</div>
+		</div>
+		<div class="course" id="notreq" >
+			<div class="sub" >
+				<img src="{% static 'staticHome/images/angular.jpg' %}">
+			</div>
+			<div class="sub1">
+				<h5>Angular JS</h5>
+
+				<a href="courses/angularjs"><button id="read">KNOW MORE</button></a>
+			</div>
+		</div>
+		<div class="course"id="notreq" >
+			<div class="sub" >
+				<img src="{% static 'staticHome/images/react2.jpg' %}">
+			</div>
+			<div class="sub1">
+				<h5>React JS</h5>
+
+				<a href="courses/reactjs"><button id="read">KNOW MORE</button></a>
+			</div>
+		</div>
+		<div class="course"id="notreq" >
+			<div class="sub" >
+				<img src="{% static 'staticHome/images/vue.jpg' %}">
+			</div>
+			<div class="sub1">
+				<h5>Vue Js</h5>
+
+				<a href="courses/vuejs"><button id="read">KNOW MORE</button></a>
+			</div>
+		</div>
+		<div class="course" id="notreq">
+			<div class="sub" >
+				<img src="{% static 'staticHome/images/java1.jpg' %}">
+			</div>
+			<div class="sub1">
+				<h5>JAVA</h5>
+
+				<a href="courses/java"><button id="read">KNOW MORE</button></a>
+			</div>
+		</div>
+		<div class="course" id="notreq">
+			<div class="sub" >
+				<img src="{% static 'staticHome/images/.net_1.jpg' %}">
+			</div>
+			<div class="sub1">
+				<h5>.NET</h5>
+
+				<a href="courses/.net"><button id="read">KNOW MORE</button></a>
+			</div>
+		</div>
+		<div class="course" id="notreq">
+			<div class="sub" >
+				<img src="{% static 'staticHome/images/nodejs.jpg' %}">
+			</div>
+			<div class="sub1">
+				<h5>Node JS</h5>
+
+				<a href="courses/nodejs"><button id="read">KNOW MORE</button></a>
+			</div>
+		</div>
+	</div>
+	<a href="/courses/coursedetails" id="know">READ MORE>></a>
+</div>
 				<!-- courses close -->
 		</div>
 				<div id="News" class="tabcontent">
 		<div class="container-fluid " id="courses2" style="display: inline-block !important;padding-left: 60px;">
 				<!-- allcourses  -->
-					<div class="row " id="courses3">  
-		<div class="course" >  
-			<div class="sub" >  
-				<img src="{% static 'staticHome/images/core ui.jpeg' %}">  
-			</div>  
-			<div class="sub1">  
-				<h5>CoreUI</h5>  
-				 
-				<a href="courses/coursespage/coreui"><button id="read">KNOW MORE</button></a>  
-			</div>  
-		</div>  
-		<div class="course" >  
-			<div class="sub" >  
-				<img src="{% static 'staticHome/images/java1.jpg' %}">  
-			</div>  
-			<div class="sub1">  
-				<h5>Java</h5> 
-				  
-				<a href="courses/coursespage/java"><button id="read">KNOW MORE</button></a>  
-			</div>  
-		</div>  
-		<div class="course" >  
-			<div class="sub" >  
-				<img src="{% static 'staticHome/images/mean.jpg' %}">  
-			</div>  
-			<div class="sub1">  
-				<h5>MEAN</h5>  
-				 
-				<a href="courses/coursespage/mean"><button id="read">KNOW MORE</button></a>  
-			</div>  
-		</div>  
-		<div class="course" >  
-			<div class="sub" > 
-				<img src="{% static 'staticHome/images/ionic1.jpg' %}">  
-			</div>  
-			<div class="sub1">  
-				<h5>Ionic</h5>  
-				  
-				<a href="courses/coursespage/ionic"><button id="read">KNOW MORE</button></a>  
-			</div>  
-		</div>  
-		<div class="course" >  
-			<div class="sub" >  
-				<img src="{% static 'staticHome/images/ansible.jpg' %}">  
-			</div>  
-			<div class="sub1">  
-				<h5>Ansible</h5>  
-				  
-				<a href="courses/coursespage/ansible"><button id="read">KNOW MORE</button></a>  
-			</div>  
-		</div>  
-		<div class="course" >  
-			<div class="sub" >  
-				<img src="{% static 'staticHome/images/r pro.jpg' %}">  
-			</div>  
-			<div class="sub1">  
-				<h5>R Programming</h5>  
-				  
-				<a href="courses/coursespage/java"><button id="read">KNOW MORE</button></a>  
-			</div>  
-		</div>  
-		<div class="course" >  
-			<div class="sub" >  
-				<img src="{% static 'staticHome/images/.net_1.jpg' %}"> 
-			</div>  
-			<div class="sub1">  
-				<h5>.NET</h5>  
-				  
-				<a href="courses/coursespage/.net"><button id="read">KNOW MORE</button></a>  
-			</div>  
-		</div>  
-		<div class="course" >  
-			<div class="sub" >  
-				<img src="{% static 'staticHome/images/nodejs.jpg' %}">  
-			</div>  
-			<div class="sub1">  
-				<h5>NODE JS</h5> 
-				  
-				<a href="courses/coursespage/nodejs"><button id="read">KNOW MORE</button></a>  
-			</div>  
-		</div> 
-	</div> 
-</div> 
-		</div>	
+					<div class="row " id="courses3">
+		<div class="course" >
+			<div class="sub" >
+				<img src="{% static 'staticHome/images/core ui.jpeg' %}">
+			</div>
+			<div class="sub1">
+				<h5>CoreUI</h5>
+
+				<a href="courses/coreui"><button id="read">KNOW MORE</button></a>
+			</div>
+		</div>
+		<div class="course" >
+			<div class="sub" >
+				<img src="{% static 'staticHome/images/java1.jpg' %}">
+			</div>
+			<div class="sub1">
+				<h5>Java</h5>
+
+				<a href="courses/java"><button id="read">KNOW MORE</button></a>
+			</div>
+		</div>
+		<div class="course" >
+			<div class="sub" >
+				<img src="{% static 'staticHome/images/mean.jpg' %}">
+			</div>
+			<div class="sub1">
+				<h5>MEAN</h5>
+
+				<a href="courses/mean"><button id="read">KNOW MORE</button></a>
+			</div>
+		</div>
+		<div class="course" >
+			<div class="sub" >
+				<img src="{% static 'staticHome/images/ionic1.jpg' %}">
+			</div>
+			<div class="sub1">
+				<h5>Ionic</h5>
+
+				<a href="courses/ionic"><button id="read">KNOW MORE</button></a>
+			</div>
+		</div>
+		<div class="course" >
+			<div class="sub" >
+				<img src="{% static 'staticHome/images/ansible.jpg' %}">
+			</div>
+			<div class="sub1">
+				<h5>Ansible</h5>
+
+				<a href="courses/ansible"><button id="read">KNOW MORE</button></a>
+			</div>
+		</div>
+		<div class="course" >
+			<div class="sub" >
+				<img src="{% static 'staticHome/images/r pro.jpg' %}">
+			</div>
+			<div class="sub1">
+				<h5>R Programming</h5>
+
+				<a href="courses/rprogramming"><button id="read">KNOW MORE</button></a>
+			</div>
+		</div>
+		<div class="course" >
+			<div class="sub" >
+				<img src="{% static 'staticHome/images/.net_1.jpg' %}">
+			</div>
+			<div class="sub1">
+				<h5>.NET</h5>
+
+				<a href="courses/.net"><button id="read">KNOW MORE</button></a>
+			</div>
+		</div>
+		<div class="course" >
+			<div class="sub" >
+				<img src="{% static 'staticHome/images/nodejs.jpg' %}">
+			</div>
+			<div class="sub1">
+				<h5>NODE JS</h5>
+
+				<a href="courses/nodejs"><button id="read">KNOW MORE</button></a>
+			</div>
+		</div>
+	</div>
+</div>
+		</div>
 </section>
 
 <!-------------------PROGRAMS END-------------------------->
@@ -514,33 +1922,33 @@
 <section class="cover-section" id="cover">
 	<div class="row py-5">
 	<div class="col-lg-8 col-md-6 col-12">
-	<h2 class="font-weight-bold tophead1 text-right" style="color: rgba(124,77,255 ,1)">WHAT WE COVER</h2>
+	<h2 class="font-weight-bold tophead1 text-right" style="color: rgba(124,77,255 ,1)"><button class="collapse-btn-2" id="margin-lefts" data-toggle="collapse" data-target="#colaapse-2" ><img src="{% static 'staticHome/images/drop-down-arrow.png' %}"  style="height: 10px;width: 10px;"alt="" srcset=""></button> <p class="m-left">SHOW MORE</p>WHAT WE COVER</h2>
 	</div>
 	<div class="col-lg-4 col-md-6 col-12">
 	<img src="{% static 'staticHome/images/show18.png' %}" class="img-fluid imgwidth">
 	</div>
 	</div>
-	<div class="container">
+	<div id="colaapse-2" class="container collapse">
 		<div class="row">
 			<div class="col-4 col-lg-2 col-md-3 mt-lg-5">
-				<img src="{% static 'staticHome/images/show8.png' %}"  class="show img-fluid"></img>
+				<img src="{% static 'staticHome/images/show8.png' %}"  class=" img-fluid"></img>
 				<p class="font-weight-bold text-center num1">100</p>
 				<h5 class="text-center py-5 text-uppercase font-weight-bold headfont">students</h5>
 			</div>
 			<div class="col-4 col-lg-2 col-md-3 mt-lg-5">
-				 <img src="{% static 'staticHome/images/show9.png' %}" class="show img-fluid"></img>
+				 <img src="{% static 'staticHome/images/show9.png' %}" class=" img-fluid"></img>
 				 <p class="font-weight-bold text-center num2">16</p>
 				 <h5 class="text-center py-5 text-uppercase font-weight-bold headfont">courses</h5>
 			</div>
 			<div class="col-4 col-lg-2 col-md-3 mt-lg-5">
-				<img src="{% static 'staticHome/images/show10.png' %}"  class="show img-fluid"></img>
+				<img src="{% static 'staticHome/images/show10.png' %}"  class=" img-fluid"></img>
 				<p class="font-weight-bold text-center num3">50</p>
 				<h5 class="text-center py-5 text-uppercase font-weight-bold headfont">placements</h5>
 			</div>
 			<div class="col-12 col-lg-6 col-md-3">
 				<img src="{% static 'staticHome/images/show12.png' %}" class="show12 img-fluid"></img>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<!-- <div class="container">
 		<div class="row">
@@ -556,7 +1964,7 @@
 <!-- <section class="team-section" id="team">
 	<div class="row py-5">
 	<div class="col-lg-4 col-md-6 col-10">
-	<img src="{% static 'staticHome/images/show5.png' %}" class="img-fluid">
+	<img src="images/show5.png" class="img-fluid">
 	</div>
 	<div class="col-lg-6 col-md-6 col-12">
 	<h2 class="font-weight-bold tophead" style="color: rgba(0,191,255 ,1)">OUR TEAM</h2>
@@ -591,25 +1999,35 @@
 				</div>
 			</div>
 		</div>
-	</div> 
+	</div>
  </div>
 </section>
 <a href="https://api.whatsapp.com/send?phone=+918886660462&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
 <i class="fa fa-whatsapp my-float"></i>
 </a>
 <!-------------------FOOTER END-------------------------->
+<script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="{% static 'staticHome/javascript/owl.carousel.min.js' %}"></script>
-	<script type="text/javascript" src="{% static 'staticHome/javascript/owl.carousel.js' %}"></script>
+	<script type="text/javascript" src="javascript/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="javascript/owl.carousel.js"></script>
+
+<script>
+	var coll = document.getElementsById("collap");
+
+	  coll.addEventListener("click", function() {
+		console.log("working");
+	  });
+
+	</script>
 		<script>
     $(document).ready(function(){
         // Add minus icon for collapse element which is open by default
         $(".collapse.show").each(function(){
         	$(this).prev(".button-head").find(".fa").addClass("fa-minus").removeClass("fa-plus");
         });
-        
+
         // Toggle plus minus icon on show hide of collapse element
         $(".collapse").on('show.bs.collapse', function(){
         	$(this).prev(".button-head").find(".fa").removeClass("fa-plus").addClass("fa-minus");
@@ -689,7 +2107,7 @@ $('#slider').owlCarousel({
         $btns.removeClass('active');
         $(this).addClass('active');
       })
-    
+
     var $search = $("#search").on('input',function(){
         $btns.removeClass('active');
         var matcher = new RegExp($(this).val(), 'gi');

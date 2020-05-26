@@ -83,65 +83,73 @@ def uicourses(request):
     similar = Course.objects.filter(category_name=uicourse[0].category_name)
     return render(request, 'courses/course.html', {'course' : uicourse[0], 'course_resource' : uicourse_resource, 'similar' : similar, 'lectures' : len(uicourse_resource)})
 
+
+def ui(request):
+    return render(request,'courses/uicourses.html')
+
 def backend(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/backend.html')
 
 def fullstack(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/fullstack.html')
 
 def functionaltesting(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/functionaltesting.html')
 
 def mobility(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/mobility.html')
 
 def devops(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/devops.html')
 
 def datascience(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/datascience.html')
 
 def cloud(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/cloud.html')
 
 def cyber(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/cyber.html')
 
 def digital(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/digital.html')
 
 def erp(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/erp.html')
 
 def it(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/it.html')
 
 def itcertification(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/itcertification.html')
 
 def coreui(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/coreui.html')
 
 def advancedui(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/advancedui.html')
 
 def angularjs(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/angularjs.html')
 
 def reactjs(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/reactjs.html')
 
 def vuejs(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/vuejs.html')
 
 def java(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/java.html')
 
 def net(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/.net.html')
 
 def nodejs(request):
-    return render(request, 'courses/course.html')
+    return render(request, 'courses/nodejs.html')
+
+def devopsfoundation(request):
+    return render(request,'courses/devopsfoundation.html')
 
 def coursedetails(request):
     return render(request, 'courses/course.html')
+

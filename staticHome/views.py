@@ -13,6 +13,9 @@ def index(request):
 def aboutus(request):
     return render(request, 'staticHome/aboutus.html')
 
+def program(request):
+    return render(request, 'staticHome/program.html')
+
 def consortium(request):
     return render(request, 'staticHome/consortium.html')
 
